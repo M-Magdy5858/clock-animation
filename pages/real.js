@@ -7,9 +7,13 @@ var time = setInterval(function () {
 	min = d.getMinutes();
 	sec = d.getSeconds();
 
-	document.getElementById('sec').style.rotate = `${-90 + sec * 6}deg`;
-	document.getElementById('min').style.rotate = `${-90 + min * 6}deg`;
-	document.getElementById('hour').style.rotate = `${
+	document.getElementById('sec').style.transform = `rotate(${
+		-90 + sec * 6
+	}deg )`;
+	document.getElementById('min').style.transform = `rotate(${
+		-90 + min * 6
+	}deg)`;
+	document.getElementById('hour').style.transform = `rotate(${
 		-90 + (hours + min / 60) * 30
-	}deg`;
+	}deg)`;
 }, 1000);

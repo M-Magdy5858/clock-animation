@@ -41,7 +41,7 @@ main {
   background-color: black;
   border-radius: 50%;
   position: absolute;
-  rotate: -90deg;
+  transform: rotate(-90deg);
 }
 
 
@@ -85,44 +85,55 @@ main {
   bottom: 257px;
   right: 53px;
 }
+
 #two {
   bottom: 202px;
   right: 2px;
 }
+
 #three {
   left: 278px;
 }
+
 #four {
   bottom: 58px;
   right: 2px;
 }
+
 #five {
   bottom: 6px;
   right: 53px;
 }
+
 #six {
   bottom: -16px;
   right: 129px;
 }
+
 #seven {
   bottom: 6px;
   right: 206px;
 }
+
 #eight {
   bottom: 58px;
   right: 257px;
 }
+
 #nine {
   left: -17px;
 }
+
 #ten {
   bottom: 202px;
   right: 259px;
 }
+
 #eleven {
   bottom: 257px;
   right: 205px;
 }
+
 #twelve {
   bottom: 278px;
   right: 129px;
@@ -155,7 +166,7 @@ header a:visited {
 }
 
 .container a:hover {
-  top:-4px;
+  top: -4px;
   left: -4px;
   box-shadow: 9px 9px 0 0;
 }

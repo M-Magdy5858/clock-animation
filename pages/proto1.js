@@ -9,9 +9,15 @@ function start(i) {
 		min = (timer % 3600) / 60;
 		sec = timer % 60;
 
-		document.getElementById('sec').style.rotate = `${-90 + sec * 6}deg`;
-		document.getElementById('min').style.rotate = `${-90 + min * 6}deg`;
-		document.getElementById('hour').style.rotate = `${-90 + hours * 30}deg`;
+		document.getElementById('sec').style.transform = `rotate(${
+			-90 + sec * 6
+		}deg)`;
+		document.getElementById('min').style.transform = `rotate(${
+			-90 + min * 6
+		}deg)`;
+		document.getElementById('hour').style.transform = `rotate(${
+			-90 + hours * 30
+		}deg)`;
 	}, i);
 }
 
