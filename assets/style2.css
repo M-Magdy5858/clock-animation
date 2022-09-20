@@ -1,0 +1,27 @@
+
+
+.rotator {
+  animation-name: rot;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+#sec {
+  animation-duration: 60s;
+}
+#min {
+  animation-duration: 3600s;
+}
+#hour {
+  animation-duration: calc(3600 * 12s);
+}
+
+
+@keyframes rot {
+  from {
+    rotate: -90deg;
+  }
+
+  to {
+    rotate: 270deg;
+  }
+}
