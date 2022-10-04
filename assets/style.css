@@ -20,6 +20,7 @@ main {
   max-width: 900px;
   margin: 0 auto;
   padding-top: 50px;
+  position: relative;
 }
 
 .frame {
@@ -147,6 +148,7 @@ main {
 a {
   text-decoration: none;
   color: white;
+  display: inline-block;
 }
 
 header a:visited {
@@ -166,8 +168,7 @@ header a:visited {
 }
 
 .container a:hover {
-  top: -4px;
-  left: -4px;
+  transform: translate(-4px, -4px);
   box-shadow: 9px 9px 0 0;
 }
 
@@ -180,6 +181,11 @@ button:active {
   top: 3px;
   left: 3px;
   box-shadow: 2px 2px 0 0;
+}
+
+.speed-btns a {
+  position: absolute;
+  right: 0;
 }
 
 footer {
